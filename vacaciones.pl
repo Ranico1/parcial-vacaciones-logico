@@ -16,10 +16,12 @@ destino(nico, marDelPlata).
 destino(vale, calafate).
 destino(vale, elBolson). 
 
-destino(martu, marDelPlata).
-destino(martu, bariloche).
-destino(martu, sanMartin).
-destino(martu, elBolson).
+
+destino(martu, Destino) :-
+    destino(nico, Destino).
+
+destino(martu, Destino) :-
+    destino(alf, Destino).
 
 % Punto 2
 
